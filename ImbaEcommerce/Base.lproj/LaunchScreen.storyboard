@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="sqF-VT-FOz"/>
+                        <viewControllerLayoutGuide type="bottom" id="rEV-TO-i4y"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash" translatesAutoresizingMaskIntoConstraints="NO" id="aBi-Px-rhI">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Imba" translatesAutoresizingMaskIntoConstraints="NO" id="tn4-7F-yKO">
+                                <rect key="frame" x="164.5" y="800" width="85" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="85" id="OAY-wE-woQ"/>
+                                    <constraint firstAttribute="height" constant="22" id="bGf-d5-Rov"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="aBi-Px-rhI" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="7mS-8s-rHW"/>
+                            <constraint firstItem="rEV-TO-i4y" firstAttribute="top" secondItem="tn4-7F-yKO" secondAttribute="bottom" constant="40" id="Bi3-q3-0tT"/>
+                            <constraint firstItem="tn4-7F-yKO" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="KEN-h0-FGP"/>
+                            <constraint firstItem="aBi-Px-rhI" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="M1Q-f5-FGl"/>
+                            <constraint firstAttribute="trailing" secondItem="aBi-Px-rhI" secondAttribute="trailing" id="NEB-u5-toH"/>
+                            <constraint firstAttribute="bottom" secondItem="aBi-Px-rhI" secondAttribute="bottom" id="SX1-tc-ykf"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.173913043478265" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Imba" width="85" height="22"/>
+        <image name="splash" width="373" height="812"/>
+    </resources>
+</document>
