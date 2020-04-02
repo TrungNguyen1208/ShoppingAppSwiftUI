@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		101767B824339915009CDEDA /* BorderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101767B724339915009CDEDA /* BorderButton.swift */; };
 		104108CC2430479D005F4182 /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104108CB2430479D005F4182 /* Page.swift */; };
 		104108EE24304E5A005F4182 /* SFUIDisplayFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104108D724304E59005F4182 /* SFUIDisplayFont.swift */; };
 		104108EF24304E5A005F4182 /* SF-UI-Text-SemiboldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 104108D824304E59005F4182 /* SF-UI-Text-SemiboldItalic.otf */; };
@@ -49,9 +50,13 @@
 		104D9AC2242FAA1800A6576D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 104D9AC1242FAA1800A6576D /* Assets.xcassets */; };
 		104D9AC5242FAA1800A6576D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 104D9AC4242FAA1800A6576D /* Preview Assets.xcassets */; };
 		104D9AC8242FAA1800A6576D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 104D9AC6242FAA1800A6576D /* LaunchScreen.storyboard */; };
+		10AFE15F243241E30074ED7A /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10AFE15E243241E30074ED7A /* ForgotPasswordView.swift */; };
+		10D67BE924362FE700C20874 /* BorderTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D67BE824362FE700C20874 /* BorderTextField.swift */; };
+		10D67BEB243637EA00C20874 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D67BEA243637EA00C20874 /* LoginView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		101767B724339915009CDEDA /* BorderButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderButton.swift; sourceTree = "<group>"; };
 		104108CB2430479D005F4182 /* Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
 		104108D724304E59005F4182 /* SFUIDisplayFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFUIDisplayFont.swift; sourceTree = "<group>"; };
 		104108D824304E59005F4182 /* SF-UI-Text-SemiboldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Text-SemiboldItalic.otf"; sourceTree = "<group>"; };
@@ -96,6 +101,9 @@
 		104D9AC4242FAA1800A6576D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		104D9AC7242FAA1800A6576D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		104D9AC9242FAA1800A6576D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		10AFE15E243241E30074ED7A /* ForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
+		10D67BE824362FE700C20874 /* BorderTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderTextField.swift; sourceTree = "<group>"; };
+		10D67BEA243637EA00C20874 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,6 +190,8 @@
 		104108D324304C6C005F4182 /* CustomView */ = {
 			isa = PBXGroup;
 			children = (
+				101767B724339915009CDEDA /* BorderButton.swift */,
+				10D67BE824362FE700C20874 /* BorderTextField.swift */,
 			);
 			path = CustomView;
 			sourceTree = "<group>";
@@ -190,6 +200,7 @@
 			isa = PBXGroup;
 			children = (
 				104D9ABD242FAA1200A6576D /* SceneDelegate.swift */,
+				10AFE15D243241980074ED7A /* Login */,
 				104108D524304CD4005F4182 /* WalkThought */,
 			);
 			path = Scene;
@@ -303,6 +314,15 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		10AFE15D243241980074ED7A /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				10AFE15E243241E30074ED7A /* ForgotPasswordView.swift */,
+				10D67BEA243637EA00C20874 /* LoginView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -399,6 +419,7 @@
 				104109202430F46D005F4182 /* DeviceGuru+Extension.swift in Sources */,
 				104D9ABC242FAA1200A6576D /* AppDelegate.swift in Sources */,
 				1041090F24305C7D005F4182 /* Color+Extension.swift in Sources */,
+				10D67BE924362FE700C20874 /* BorderTextField.swift in Sources */,
 				10410913243094B8005F4182 /* PageViewContainer.swift in Sources */,
 				104109152430989D005F4182 /* PageViewController.swift in Sources */,
 				104109192430A4CB005F4182 /* UIViewController+Extension.swift in Sources */,
@@ -408,10 +429,13 @@
 				104108CC2430479D005F4182 /* Page.swift in Sources */,
 				1041090D2430584B005F4182 /* PageView.swift in Sources */,
 				104108EE24304E5A005F4182 /* SFUIDisplayFont.swift in Sources */,
+				101767B824339915009CDEDA /* BorderButton.swift in Sources */,
 				1041090B24305310005F4182 /* Font+Extension.swift in Sources */,
+				10D67BEB243637EA00C20874 /* LoginView.swift in Sources */,
 				104109172430A314005F4182 /* WalkThoughtView.swift in Sources */,
 				1041091F2430F46D005F4182 /* Hardware.swift in Sources */,
 				10410911243092F2005F4182 /* PageIndicator.swift in Sources */,
+				10AFE15F243241E30074ED7A /* ForgotPasswordView.swift in Sources */,
 				104D9AC0242FAA1200A6576D /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -550,13 +574,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"ImbaEcommerce/Preview Content\"";
+				DEVELOPMENT_TEAM = 74GHHBCQX6;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = ImbaEcommerce/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.trungnguyen.Imba-Ecommerce";
+				PRODUCT_BUNDLE_IDENTIFIER = com.trungnguyen.ImbaEcommerce;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -569,13 +594,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"ImbaEcommerce/Preview Content\"";
+				DEVELOPMENT_TEAM = 74GHHBCQX6;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = ImbaEcommerce/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.trungnguyen.Imba-Ecommerce";
+				PRODUCT_BUNDLE_IDENTIFIER = com.trungnguyen.ImbaEcommerce;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -11,16 +11,20 @@ import SwiftUI
 struct WalkThoughtView: View {
     
     @State var show = false
-    private let initialLaunchKey = "isInitialLaunch"
+    //    private let initialLaunchKey = "isInitialLaunch"
     
     var body: some View {
         VStack {
-            PageViewContainer( viewControllers: Page.getAll.map({  UIHostingController(rootView: PageView(page: $0) ) }), didTouchFinishButton: {
-                withAnimation {
-                    self.show = true
-                }
-                UserDefaults.standard.set(true, forKey: self.initialLaunchKey)
-            }).transition(.scale)
+            if show {
+                LoginView().transition(.move(edge: .bottom))
+            } else {
+                PageViewContainer( viewControllers: Page.getAll.map({  UIHostingController(rootView: PageView(page: $0) ) }), didTouchFinishButton: {
+                    withAnimation {
+                        self.show = true
+                    }
+                    //                UserDefaults.standard.set(true, forKey: self.initialLaunchKey)
+                }).transition(.scale)
+            }
         }
         .frame(maxHeight:.infinity)
         .background(Color.backgroundColor)
@@ -38,6 +42,10 @@ struct WalkThoughtView_Previews: PreviewProvider {
             WalkThoughtView()
                 .previewDevice(PreviewDevice(rawValue: "iPhone SE"))
                 .previewDisplayName("iPhone SE")
+            WalkThoughtView()
+                .previewDevice(PreviewDevice(rawValue: "iPhone 8"))
+                .previewDisplayName("iPhone 8")
+            
         }
     }
 }

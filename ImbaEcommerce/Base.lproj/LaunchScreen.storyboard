@@ -21,7 +21,7 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash" translatesAutoresizingMaskIntoConstraints="NO" id="aBi-Px-rhI">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Imba" translatesAutoresizingMaskIntoConstraints="NO" id="tn4-7F-yKO">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="tn4-7F-yKO">
                                 <rect key="frame" x="164.5" y="800" width="85" height="22"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="85" id="OAY-wE-woQ"/>
@@ -46,7 +46,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Imba" width="85" height="22"/>
+        <image name="Logo" width="85" height="22"/>
         <image name="splash" width="373" height="812"/>
     </resources>
 </document>

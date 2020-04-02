@@ -56,11 +56,18 @@ struct PageViewContainer_Previews: PreviewProvider {
                 UIHostingController(rootView: PageView(page: $0))
             }))
             .previewDisplayName("iPhone Pro Max")
+            
             PageViewContainer(viewControllers: Page.getAll.map({
                 UIHostingController(rootView: PageView(page: $0))
             }))
             .previewDevice(PreviewDevice(rawValue: "iPhone SE"))
             .previewDisplayName("iPhone SE")
+            
+            PageViewContainer(viewControllers: Page.getAll.map({
+                UIHostingController(rootView: PageView(page: $0))
+            }))
+            .previewDevice(PreviewDevice(rawValue: "iPhone 8"))
+            .previewDisplayName("iPhone 8")
         }
     }
 }
