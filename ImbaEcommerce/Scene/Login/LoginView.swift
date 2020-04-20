@@ -14,19 +14,22 @@ struct LoginView: View {
     @State private var password = ""
     @State private var formOffset: CGFloat = 0
     
+    @State private var presentSignupSheet = false
+    @State private var presentPasswordRecoverySheet = false
+    
     var body: some View {
         VStack(spacing: 40.0) {
             Image("Logo")
                 .resizable()
-                .frame(width: 85, height: 22)
+                .frame(width: 170, height: 44)
             Text("Login").font(.title).bold()
-            VStack {
+            VStack(spacing: 10.0) {
                 BorderTextField(value: self.$email, placeholder: "Email", icon: Image(systemName: "at"), keyboardType: .emailAddress, onEditingChanged: { flag in withAnimation {
-                        self.formOffset = flag ? -150 : 0
+                    self.formOffset = flag ? -150 : 0
                     }
                 })
                 
-                BorderTextField(value: self.$email, placeholder: "Password", icon: Image(systemName: "lock"), isSecure: true, onEditingChanged: { flag in withAnimation {
+                BorderTextField(value: self.$password, placeholder: "Password", icon: Image(systemName: "lock"), isSecure: true, onEditingChanged: { flag in withAnimation {
                     
                     }
                 })
@@ -34,6 +37,26 @@ struct LoginView: View {
                 BorderButton(text: "Login", action: {
                     
                 })
+            }
+            
+            Button(action: {
+                self.presentSignupSheet.toggle()
+            }) {
+                Text("Don't have an account? Sign up.")
+                    .font(.fontWithType(.bold, size: 16))
+                    .accentColor(Color.black)
+            }.sheet(isPresented: self.$presentSignupSheet) {
+                SignUpView(presentSignupSheet: self.$presentSignupSheet)
+            }
+            
+            Button(action: {
+                self.presentPasswordRecoverySheet.toggle()
+            }) {
+                Text("Forgot your password?")
+                    .font(.fontWithType(.medium, size: 16))
+                    .accentColor(Color.darkBlue)
+            }.sheet(isPresented: self.$presentPasswordRecoverySheet) {
+                ForgotPasswordView(presentPasswordRecoverySheet: self.$presentPasswordRecoverySheet)
             }
         }
         .padding()

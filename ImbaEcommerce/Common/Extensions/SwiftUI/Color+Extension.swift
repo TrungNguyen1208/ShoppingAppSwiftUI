@@ -16,7 +16,7 @@ extension Color {
     static var textColor = Color("textColor")
     static var brightYellow = Color("brightYellow")
     static var lightBlue = Color("lightBlue")
-    static var purple = Color("purple")
+    static var darkBlue = Color("darkBlue")
     static var shallowOrange = Color("shallowOrange")
     static var teal = Color("teal")
     

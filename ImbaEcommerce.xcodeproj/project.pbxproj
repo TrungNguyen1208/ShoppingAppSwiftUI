@@ -53,6 +53,7 @@
 		10AFE15F243241E30074ED7A /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10AFE15E243241E30074ED7A /* ForgotPasswordView.swift */; };
 		10D67BE924362FE700C20874 /* BorderTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D67BE824362FE700C20874 /* BorderTextField.swift */; };
 		10D67BEB243637EA00C20874 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D67BEA243637EA00C20874 /* LoginView.swift */; };
+		10E4E2CB244DE8A300C80CE7 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10E4E2CA244DE8A300C80CE7 /* SignUpView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -104,6 +105,7 @@
 		10AFE15E243241E30074ED7A /* ForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
 		10D67BE824362FE700C20874 /* BorderTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderTextField.swift; sourceTree = "<group>"; };
 		10D67BEA243637EA00C20874 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		10E4E2CA244DE8A300C80CE7 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -319,6 +321,7 @@
 			children = (
 				10AFE15E243241E30074ED7A /* ForgotPasswordView.swift */,
 				10D67BEA243637EA00C20874 /* LoginView.swift */,
+				10E4E2CA244DE8A300C80CE7 /* SignUpView.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -432,6 +435,7 @@
 				101767B824339915009CDEDA /* BorderButton.swift in Sources */,
 				1041090B24305310005F4182 /* Font+Extension.swift in Sources */,
 				10D67BEB243637EA00C20874 /* LoginView.swift in Sources */,
+				10E4E2CB244DE8A300C80CE7 /* SignUpView.swift in Sources */,
 				104109172430A314005F4182 /* WalkThoughtView.swift in Sources */,
 				1041091F2430F46D005F4182 /* Hardware.swift in Sources */,
 				10410911243092F2005F4182 /* PageIndicator.swift in Sources */,
